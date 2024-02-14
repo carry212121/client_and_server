@@ -6,7 +6,7 @@ def receive_messages():
         try:
             data = client_socket.recv(1024)
             if data:
-                print("\nReceived from client2:", data.decode())
+                print("\nReceived from Server:", data.decode())
         except ConnectionResetError:
             print("Server connection closed.")
             break
